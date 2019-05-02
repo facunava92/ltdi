@@ -1,0 +1,13 @@
+#!/bin/sh
+
+KEY=$(head /dev/urandom | tr -dc "0123456789" | cut -c 1-8)
+
+uci set wireless.@wifi-iface[1].key=$KEY
+uci commit wireless
+/etc/init.d/network reload
+
+sed -i "s|^<h1>Pass: .*$|<h1>Pass: $KEY <\h1> |g" /www/wifi/index.html
+
+logger wifi pass changed to $KEY
+
+return 0

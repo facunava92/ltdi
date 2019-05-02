@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text styles */
+    text-align: center ;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 12em;
+
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+root@OpenWrt:/www/wifi# clear
+root@OpenWrt:/www/wifi# cat style.css
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text styles */
+    text-align: center ;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 12em;
+
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
